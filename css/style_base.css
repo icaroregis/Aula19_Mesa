@@ -51,12 +51,14 @@ nav ul li a::before{
     position:absolute;
     bottom:-10px;
     height:5px;
-
+   
     /*dica: width iniciando em 0 e aplicação de uma transição*/
   }
   
   nav ul li a:hover::before{
    /*dica: width 100*/
+   width: 100px;  
+   animation: menu__item 0.5s ;   
   }
   
 
@@ -76,8 +78,9 @@ nav ul li a::before{
     color:var(--secondary-color);
     background: var(--primary-color);
     padding: 10px 15px;
-    text-decoration: none;
+    text-decoration: none; 
     /* transition: ; */
+    transition: 1s; 
 }
 
 .social ul li .icon-facebook {background:#3b5998;} 
@@ -88,6 +91,7 @@ nav ul li a::before{
 
 .social ul li a:hover{
     /* transform: ; */
+    transform: scale3d(4,1,1);        
 }
 
 
@@ -143,3 +147,13 @@ nav ul li a::before{
     50%{transform: rotate(900deg);}
     100%{transform: rotate(500deg);}
  } 
+
+ @keyframes menu__item{
+    from {
+        width: 0; 
+    } to {
+        width: 100%; 
+    } 
+ }
+
+ 
