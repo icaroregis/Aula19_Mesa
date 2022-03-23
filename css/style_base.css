@@ -59,7 +59,7 @@ nav ul li a::before{
    animation: menu__item 0.5s forwards;    
   }
 
-  @keyframes menu__item{
+  @keyframes menu__item {
     from {
         width: 0; 
     } to {
